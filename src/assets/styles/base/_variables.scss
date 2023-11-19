@@ -1,0 +1,9 @@
+// Vars
+$container-width: 990px;
+$container-padding: 15px;
+$container-calculated-width: $container-width + ($container-padding * 2);
+
+:root {
+  --container-width: #{$container-calculated-width};
+  --container-padding: #{$container-padding};
+}

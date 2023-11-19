@@ -1,0 +1,24 @@
+// Import vendor styles
+@import "vendor/normalize";
+
+// Import base styles
+@import "base/base";
+@import "base/mixins";
+@import "base/variables";
+@import "base/typography";
+
+// Import component styles
+@import "components/navbar";
+@import "components/buttons";
+@import "components/tabs";
+
+// Import layout styles
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+// Import page-specific styles
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+

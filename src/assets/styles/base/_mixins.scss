@@ -1,0 +1,38 @@
+@mixin font-face($font-family, $font-path, $font-weight: normal, $font-style: normal) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("#{$font-path}.woff2") format("woff2"),
+    url("#{$font-path}.woff") format("woff"),
+    url("#{$font-path}.ttf") format("truetype");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@mixin resetStyles {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+@mixin focusReset {
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin resetButton {
+  @include resetStyles;
+  @include focusReset;
+}
+
+@mixin resetInput {
+  @include resetStyles;
+  @include focusReset;
+}
+
+@mixin resetList {
+  @include resetStyles;
+  list-style-type: none;
+}
