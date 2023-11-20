@@ -11,17 +11,10 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
-    @media (max-width: $laptop) {
-      padding-right: 50px;
-      padding-left: 50px;
-    }
-
     @media (max-width: $mobile) {
       flex-wrap: wrap;
       gap: 20px;
-      padding-right: 15px;
       padding-bottom: 40px;
-      padding-left: 15px;
     }
   }
 
