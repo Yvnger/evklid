@@ -143,12 +143,12 @@ gulp.task("sprites", () => {
 // Favicon: generate
 gulp.task("favicon-generate", (done) => {
   return gulp
-    .src("src/images/favicon.png", { allowEmpty: true })
+    .src("src/assets/images/favicon.png", { allowEmpty: true })
     .pipe(
       favicons({
-        appName: "App name", // Название вашего приложения
-        appShortName: "App", // Короткое название приложения
-        appDescription: "This is my application", // Описание приложения
+        appName: "Evklid", // Название вашего приложения
+        appShortName: "evklid", // Короткое название приложения
+        appDescription: "Проектные системы", // Описание приложения
         developerName: "Yaroslav Pleshakov", // Имя разработчика
         developerURL: "https://github.com/Yvnger", // URL веб-сайта разработчика
         background: "#ffffff", // Фоновый цвет для Windows Tile
@@ -267,5 +267,5 @@ gulp.task("watch", () => {
 /**
  * General tasks
  */
-gulp.task("dev", gulp.series("clean-dest", "html", "styles", "scripts", "fonts", "images", "sprites", gulp.parallel("connect", "watch")));
+gulp.task("dev", gulp.series("clean-dest", "html", "styles", "scripts", "fonts", "images", "sprites", "favicon", gulp.parallel("connect", "watch")));
 gulp.task("build", gulp.series("clean-dest", "html", "styles", "scripts", "fonts", "images", "sprites", "favicon"));
