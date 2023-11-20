@@ -1,7 +1,10 @@
 // Vars
-$container-width: 990px;
+$container-width: 1770px;
 $container-padding: 15px;
 $container-calculated-width: $container-width + ($container-padding * 2);
+
+// Font vars
+$primary-font: 'Montserrat', sans-serif;
 
 :root {
   --container-width: #{$container-calculated-width};
