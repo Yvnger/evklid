@@ -62,8 +62,16 @@ a {
   }
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
 ul,
 ol {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
