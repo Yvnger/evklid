@@ -17,4 +17,9 @@ $desktop: 1280px;
   --container-padding: #{$container-padding};
   --transition-duration: .15s;
   --transition-function: ease-in-out;
+
+  @media (max-width: $mobile) {
+    --container-width: 100%;
+    --container-padding: 15px;
+  }
 }
