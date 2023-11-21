@@ -1,0 +1,25 @@
+.section {
+  &__title {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000;
+
+    @media (max-width: $mobile) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+}
