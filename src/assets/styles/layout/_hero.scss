@@ -1,7 +1,8 @@
 .hero {
   padding: 100px 80px;
+  margin-bottom: 50px;
   border-radius: 32px;
-  //background-image: url('images/hero-desktop.jpg');
+  background-image: url('images/hero-desktop.jpg');
   background-image: image-set(
       url('images/hero-desktop.webp') 1x,
       url('images/hero-desktop@2x.webp') 2x,
@@ -13,6 +14,7 @@
 
   @media (max-width: $laptop) {
     padding: 160px 77px;
+    margin-bottom: 40px;
     background-image: image-set(
         url('images/hero-laptop.webp') 1x,
         url('images/hero-laptop@2x.webp') 2x,
@@ -34,6 +36,7 @@
 
   @media (max-width: $mobile) {
     padding: 60px 22px;
+    margin-bottom: 60px;
     border-radius: 16px;
     background-image: image-set(
         url('images/hero-mobile.webp') 1x,
