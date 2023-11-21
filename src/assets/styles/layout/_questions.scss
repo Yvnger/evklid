@@ -1,6 +1,14 @@
 .questions {
   margin-bottom: 100px;
 
+  @media (max-width: $desktop) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,11 +17,6 @@
 
     @media (max-width: $desktop) {
       grid-template-columns: 1fr;
-      margin-bottom: 80px;
-    }
-
-    @media (max-width: $mobile) {
-      margin-bottom: 60px;
     }
   }
 }
