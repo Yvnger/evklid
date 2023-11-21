@@ -15,12 +15,13 @@
 
 // Import layout styles
 @import "layout/grid";
+@import "layout/section";
 @import "layout/header";
 @import "layout/hero";
+@import "layout/about";
 @import "layout/footer";
 
 // Import page-specific styles
 @import "pages/home";
-@import "pages/about";
 @import "pages/contact";
 
