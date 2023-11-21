@@ -210,6 +210,10 @@
       padding: 12px 44px;
       font-size: 12px;
       color: #f90;
+
+      &:focus {
+        color: #fff;
+      }
     }
   }
 }
