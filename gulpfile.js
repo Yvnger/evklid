@@ -109,7 +109,7 @@ gulp.task("images", () => {
     )
     .pipe(gulp.dest(`${DEST}/assets/images`))
     .pipe(gulp.src("src/assets/images/**/*.{png,jpg,jpeg}"))
-    .pipe(webp({quality: 10}))
+    .pipe(webp({quality: 100}))
     .pipe(gulp.dest(`${DEST}/assets/images`))
     .pipe(connect.reload());
 });
