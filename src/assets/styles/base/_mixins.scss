@@ -6,6 +6,7 @@
     url("#{$font-path}.ttf") format("truetype");
     font-weight: $font-weight;
     font-style: $font-style;
+    font-display: swap;
   }
 }
 
