@@ -1,0 +1,125 @@
+.footer {
+  background-color: #000;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (max-width: $desktop) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (max-width: $laptop) {
+      gap: 50px;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 25px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+    max-width: 224px;
+    max-height: 72px;
+    fill: #fff;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 16px;
+      max-width: 131px;
+      max-height: 42px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 100px;
+
+    @media (max-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: 0 0 25px;
+    font-weight: 400;
+    font-size: 48px;
+    color: #cacaca;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__text {
+    max-width: 360px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #cacaca;
+  }
+
+  &__column {
+    &--logo-nav {
+      @media (max-width: $desktop) {
+        grid-column: 1 / 3;
+      }
+
+      @media (max-width: $laptop) {
+        grid-column: 1 / 2;
+        order: 2;
+      }
+
+      @media (max-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 16px;
+        border-top: 1px solid #414141;
+      }
+    }
+
+    &--feedback {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: $desktop) {
+        grid-column: 3 / 6;
+      }
+
+      @media (max-width: $laptop) {
+        grid-column: 1 / 2;
+        order: 1;
+        max-width: 570px;
+      }
+
+      @media (max-width: $mobile) {
+        max-width: 100%;
+      }
+    }
+
+    &--info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @media (max-width: $desktop) {
+        display: none;
+      }
+    }
+  }
+}
