@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp dev",
     "build": "cross-env NODE_ENV=production gulp build",
-    "lint:css": "stylelint src/assets/styles/**/*.scss"
+    "lint:css": "stylelint src/assets/styles/**/*.scss",
+    "deploy": "gh-pages -d dist"
   },
   "author": "yvnger.",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^6.0.1",
     "del": "^7.1.0",
+    "gh-pages": "^6.1.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-cache": "^1.1.3",
