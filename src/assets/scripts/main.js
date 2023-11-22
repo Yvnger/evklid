@@ -23,7 +23,7 @@ anchors.map(link => {
 
 const formAgree = document.getElementById('agree');
 const formSubmitButton = document.getElementById('submit');
-console.log(formAgree, formSubmitButton)
+
 function checkAgreeStatus() {
   formSubmitButton.disabled = !formAgree.checked;
 }
