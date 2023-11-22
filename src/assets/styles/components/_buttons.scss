@@ -6,12 +6,18 @@
   font-weight: 700;
   font-size: 16px;
   white-space: nowrap;
-  transition-property: background-color, color;
+  transition-property: background-color, color, opacity;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
 
   &:focus {
     outline: none;
+  }
+
+  &:disabled {
+    opacity: .4;
+    pointer-events: none;
+    user-select: none;
   }
 
   // Variation
