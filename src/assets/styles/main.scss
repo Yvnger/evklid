@@ -7,12 +7,6 @@
 @import "base/variables";
 @import "base/typography";
 
-// Import component styles
-@import "components/nav";
-@import "components/search";
-@import "components/buttons";
-@import "components/tabs";
-
 // Import layout styles
 @import "layout/grid";
 @import "layout/section";
@@ -23,7 +17,10 @@
 @import "layout/questions";
 @import "layout/footer";
 
-// Import page-specific styles
-@import "pages/home";
-@import "pages/contact";
+// Import component styles
+@import "components/nav";
+@import "components/buttons";
+@import "components/form";
+@import "components/social";
+
 
