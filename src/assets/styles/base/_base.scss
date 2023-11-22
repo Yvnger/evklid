@@ -4,40 +4,17 @@ html {
   overflow-x: hidden;
 }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 a {
-  position: relative;
-  padding: 5px;
-  border: 2px solid transparent;
-  color: black;
-  text-decoration: none;
   transition-property: border-color, color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
   box-sizing: border-box;
-
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    display: block;
-    width: 2px;
-    height: 2px;
-    background-color: transparent;
-    transition: background-color var(--transition-duration) var(--transition-function);
-  }
-
-  &:before {
-    left: -2px;
-  }
-
-  &:after {
-    right: -2px;
-  }
 
   &:focus {
     outline: none;
@@ -50,6 +27,7 @@ a {
 
   &:hover {
     border-bottom-color: #f90;
+
     &:after,
     &:before {
       background-color: #f90;
